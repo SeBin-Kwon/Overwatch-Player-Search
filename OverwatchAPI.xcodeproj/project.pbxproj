@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE00F3992B0529CC00B8D9D2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE00F3982B0529CC00B8D9D2 /* ProfileView.swift */; };
+		AE00F39B2B052CA000B8D9D2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE00F39A2B052CA000B8D9D2 /* MainViewModel.swift */; };
 		AE5F71C32B0411D500992CB7 /* OverwatchAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5F71C22B0411D500992CB7 /* OverwatchAPIApp.swift */; };
 		AE5F71C52B0411D500992CB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5F71C42B0411D500992CB7 /* ContentView.swift */; };
 		AE5F71C72B0411D600992CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5F71C62B0411D600992CB7 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE00F3982B0529CC00B8D9D2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AE00F39A2B052CA000B8D9D2 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		AE5F71BF2B0411D500992CB7 /* OverwatchAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverwatchAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5F71C22B0411D500992CB7 /* OverwatchAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverwatchAPIApp.swift; sourceTree = "<group>"; };
 		AE5F71C42B0411D500992CB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 			children = (
 				AE5F71C22B0411D500992CB7 /* OverwatchAPIApp.swift */,
 				AE5F71C42B0411D500992CB7 /* ContentView.swift */,
+				AE00F3982B0529CC00B8D9D2 /* ProfileView.swift */,
+				AE00F39A2B052CA000B8D9D2 /* MainViewModel.swift */,
 				AE5F71D02B04124900992CB7 /* Network.swift */,
 				AE5F71D22B04126400992CB7 /* Player.swift */,
 				AE5F71D42B042DE100992CB7 /* Extension.swift */,
@@ -147,10 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE00F39B2B052CA000B8D9D2 /* MainViewModel.swift in Sources */,
 				AE5F71D32B04126400992CB7 /* Player.swift in Sources */,
 				AE5F71C52B0411D500992CB7 /* ContentView.swift in Sources */,
 				AE5F71C32B0411D500992CB7 /* OverwatchAPIApp.swift in Sources */,
 				AE5F71D52B042DE100992CB7 /* Extension.swift in Sources */,
+				AE00F3992B0529CC00B8D9D2 /* ProfileView.swift in Sources */,
 				AE5F71D12B04124900992CB7 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct OverwatchAPIApp: App {
-    @StateObject var network = Network()
+    @StateObject var viewModel = MainViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(network)
+                .environmentObject(viewModel)
         }
     }
 }

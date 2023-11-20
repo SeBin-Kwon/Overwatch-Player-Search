@@ -52,3 +52,40 @@ struct Endorsement: Codable {
 struct Players: Codable {
     var results: [Player]
 }
+
+struct Stats: Codable {
+    let general: General
+    let heroes: [String: General]
+    let roles: Roles
+}
+
+// MARK: - General
+struct General: Codable {
+    let average: Average
+    let gamesLost, gamesPlayed, gamesWon: Int
+    let kda: Double
+    let timePlayed: Int
+    let total: Average
+    let winrate: Double
+
+    enum CodingKeys: String, CodingKey {
+        case average
+        case gamesLost = "games_lost"
+        case gamesPlayed = "games_played"
+        case gamesWon = "games_won"
+        case kda
+        case timePlayed = "time_played"
+        case total, winrate
+    }
+}
+
+// MARK: - Average
+struct Average: Codable {
+    let assists, damage, deaths, eliminations: Double
+    let healing: Double
+}
+
+// MARK: - Roles
+struct Roles: Codable {
+    let damage, support, tank: General
+}
